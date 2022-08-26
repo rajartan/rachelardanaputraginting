@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image {
+    @apply relative w-full md:w-1/2 overflow-hidden rounded-lg;
+}
+
+.image-img {
+    @apply block w-full h-72 bg-gradient-to-t from-orange-700 to-orange-500 rounded-lg;
+}
+
+.image-overlay {
+    @apply absolute h-full bg-gradient-to-t from-black to-transparent top-0 left-4 right-4 px-4 rounded-lg opacity-0 transition-all duration-500;
+}
+
+.image-overlay > * {
+    @apply translate-y-72 transition-all duration-300;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+}
+
+.image-overlay:hover > * {
+    @apply translate-y-0;
+}
+
+.mode:hover > .fa {
+    @apply text-orange-600;
+}
