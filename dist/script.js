@@ -20,8 +20,12 @@ darkToggle.addEventListener('click', function () {
 // Check mode
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     darkToggle.checked = true
+    icon.classList.add('fa-moon')
+        icon.classList.remove('fa-sun')
 } else {
     darkToggle.checked = false
+    icon.classList.add('fa-sun');
+    icon.classList.remove('fa-moon')
 }
 
 // Projects & Skilss
