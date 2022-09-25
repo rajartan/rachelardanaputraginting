@@ -11,11 +11,11 @@
 }
 
 .image-overlay {
-    @apply absolute h-full bg-gradient-to-t from-black to-transparent top-0 left-4 right-4 px-4 rounded-lg opacity-0 transition-all duration-500;
+    @apply absolute h-full bg-gradient-to-t from-black to-transparent top-0 left-4 right-4 px-4 rounded-lg opacity-0 transition-all duration-600;
 }
 
 .image-overlay > * {
-    @apply translate-y-72 transition-all duration-300;
+    @apply translate-y-72 transition-all duration-500;
 }
 
 .image-overlay:hover {
